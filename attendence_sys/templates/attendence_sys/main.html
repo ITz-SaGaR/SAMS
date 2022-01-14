@@ -1,0 +1,33 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Attendance System</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body style="background-image: -webkit-linear-gradient(left,#C33764,#1D2671);"> 
+		{%  include 'attendence_sys/navbar.html' %}
+	<br>
+<br>
+<br>
+	<div class="container-fluid"> 
+	{% block content %}
+	{% endblock %}
+    </div>
+	<script type="text/javascript">
+		(function(d, m){
+			var kommunicateSettings = 
+				{"appId":"7744628359b4560445d62cbf82ead546","popupWidget":true,"automaticChatOpenOnNavigation":true};
+			var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+			s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+			var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+			window.kommunicate = m; m._globals = kommunicateSettings;
+		})(document, window.kommunicate || {});
+	/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+	</script>
+</body>
+</html>

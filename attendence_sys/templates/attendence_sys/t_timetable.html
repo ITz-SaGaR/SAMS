@@ -1,0 +1,174 @@
+{% extends 'attendence_sys/main.html' %}
+
+    {% block content %}
+        <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="text-align: center">
+                    <h2 class="text-center"  style="color: azure;">
+                     Timetable
+                    </h2>
+                </div>
+                <div id="no-more-tables" style="text-align: center" > 
+                     <div class="container"style="text-align: center">
+                        <table class="col-sm-12 table table-bordered table-striped table- cf" id="dataTable" width="100%" cellspacing=""style="text-align: center">
+                            <thead class="container" style="text-align: center">
+                                <div style="text-align: center" position="relative" text-align="left">
+                                <tr align="center" style="text-align: center"> 
+                                    <td align="center" height="50" 
+                                        width="100">
+                                        <b style="color: #E8FF00;">Day / Period </b></br>
+                                    </td>
+                                    <td align="center" height="50" 
+                                        width="100">
+                                        <b style="color: #E8FF00;"> 09:30-10:20</b>
+                                    </td>
+                                    <td align="center" height="50" 
+                                        width="100">
+                                        <b style="color: #E8FF00;"> 10:20-11:10</b>
+                                    </td>
+                                    <td align="center" height="50" 
+                                        width="100">
+                                        <b style="color: #E8FF00;"> 11:10-12:00</b>
+                                    </td>
+                                    <td align="center" height="50" 
+                                        width="100">
+                                        <b style="color: #E8FF00;"> 12:00-12:40</b>
+                                    </td>
+                                    <td align="center" height="50" 
+                                        width="100">
+                                        <b style="color: #E8FF00;"> 12:40-01:30</b>
+                                    </td>
+                                    <td align="center" height="50" 
+                                        width="100">
+                                        <b style="color: #E8FF00;"> 01:30-02:20</b>
+                                    </td>
+                                    <td align="center" height="50" 
+                                        width="100">
+                                        <b style="color: #E8FF00;"> 02:20-03:10</b>
+                                    </td>
+                                    <td align="center" height="50" 
+                                        width="100">
+                                        <b style="color: #E8FF00;"> 03:10-04:00</b>
+                                    </td>
+                                    <td align="center" height="50" 
+                                        width="100">
+                                        <b style="color: #E8FF00;"> 04:00-04:50</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" height="50">
+                                        <b style="color: #E8FF00;"> Monday</b></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td rowspan="6" align="center" height="50">
+                                        <h2 style="color: #E8FF00;"> <br>L<br>U<br>N<br>C<br>H</h2>
+                                    </td>
+                                    <td colspan="3" align="center" 
+                                        height="50"><a href="http://127.0.0.1:8000/">LAB</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" height="50">
+                                        <b style="color: #E8FF00;"> Tuesday</b>
+                                    </td>
+                                    <td colspan="3" align="center" 
+                                        height="50"><a href="http://127.0.0.1:8000/">LAB</a>
+                                    </td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" height="50">
+                                        <b style="color: #E8FF00;"> Wednesday</b>
+                                    </td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td colspan="3" align="center" 
+                                        height="50"><a href="http://127.0.0.1:8000/">LIBRARY</a>
+                                        <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" height="50">
+                                        <b style="color: #E8FF00;"> Thursday</b>
+                                    </td>
+                                     <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td colspan="3" align="center" 
+                                        height="50"><a href="http://127.0.0.1:8000/">LAB</a>
+                                        <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    </td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td align="center" height="50">
+                                        <b style="color: #E8FF00;"> Friday</b>
+                                    </td>
+                                    <td colspan="3" align="center" 
+                                        height="50"><a href="http://127.0.0.1:8000/">LAB</a>
+                                    </td>
+                                   <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" height="50">
+                                        <b style="color: #E8FF00;"> Saturday</b>
+                                    </td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    <td colspan="3" align="center" 
+                                        height="50"><a href="http://127.0.0.1:8000/">PROJECT</a>
+                                        <td align="center" height="50"><a href="http://127.0.0.1:8000/">CSE DEMO</a></td>
+                                    </td>
+                                </div>
+                                </tr>
+                                          
+              
+                                
+                            </thead>
+                            <tbody>
+                                {% for i in class_matrix %}
+                                <tr>
+                                    {% for j in i %}
+                                        {% if forloop.counter == 1 %}
+                                            <td><b>{{ j }}</b></td>
+                                        {% elif j == True %}
+                                            <td></td>
+                                        {% else %}
+    {#                                        <td><a href="{% url 'http://127.0.0.1:8000/' j.id %}" >{{ j.assign.class_id_id }} {{ j.assign.course.shortname }}</a> </td>#}
+                                            <td><a href="{% url 'http://127.0.0.1:8000/' j.id %}"
+                                                    onclick="window.open('{% url 'http://127.0.0.1:8000/' j.id %}',
+                                                                         'newwindow',
+                                                                         'width=600,height=400');
+                                                              return false;">{{ j.assign.class_id_id }} {{ j.assign.course.shortname }}</a>
+                                            </td>
+                                        {% endif %}
+                                    {% endfor %}
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    {% endblock %}
